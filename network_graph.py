@@ -50,7 +50,7 @@ class NetworkGraph:
             for s in v.source:
                 self.g.add_edge(s[0].id, id, description=s[1])
             for t in v.target:
-                self.g.add_edge(id, t[0].id, description=s[1])
+                self.g.add_edge(id, t[0].id, description=t[1])
 
     def save_graphml(self, file_name):
         """

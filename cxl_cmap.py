@@ -223,7 +223,6 @@ class CxlCmap:
         return subset
 
     def _is_a_key(self, c):
-        # TODO assumption that keys are stable in config and can just skip them - can we remove key?
         is_key = False
         if c.get("label") == "????":
             is_key = True

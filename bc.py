@@ -24,19 +24,21 @@ class BiomedicalConcept:
         constructor initializing the BC attributes
         :param kwargs: the BC attributes as a dictionary
         """
-        self.name = kwargs.get("name", "")
-        self.c_code = kwargs.get("c_code", "")
+        self.designation = kwargs.get("name", "")
+        self.conceptId = kwargs.get("c_code", "")
         self.label = kwargs.get("label", "")
         self.definition = kwargs.get("definition", "")
-        self.test_cd = kwargs.get("test_cd", "")
-        self.test_c_code = kwargs.get("test_c_code", "")
-        self.test_name = kwargs.get("test_name", "")
-        self.loinc = kwargs.get("loinc", "")
-        self.result_type = kwargs.get("result_type", "")
-        self.unit_list = kwargs.get("unit_list", "")
-        self.default_unit = kwargs.get("default_unit", "")
-        self.standard_unit = kwargs.get("standard_unit", "")
-        self.qualifiers = kwargs.get("qualifiers", {})
+        self.testCode = kwargs.get("test_cd", "")
+        self.testConceptId = kwargs.get("test_c_code", "")
+        self.testName = kwargs.get("test_name", "")
+        self.loincCode = kwargs.get("loinc", "")
+        self.resultType = kwargs.get("result_type", "")
+        self.unitList = kwargs.get("unit_list", [])
+        self.defaultUnit = kwargs.get("default_unit", "")
+        self.standardUnit = kwargs.get("standard_unit", [])
+        self.dataElementConcepts = kwargs.get("dataElementConcepts", {})
+        self._links = {}
+        # properties below are not included in the BC output
         self.ct_subsets = []
 
     def add_ct_subsets(self, subset):

@@ -29,7 +29,7 @@ Use the -h command-line parameter to get help on running cxl_load.py.
 Examples: 
 python cxl_load.py -f 360-bc-HbA1C.cxl -c "Glycosylated hemoglobin A1c assay"
 python cxl_load.py -f 360-bc-HbA1C.cxl -c "Glycosylated hemoglobin A1c assay" -d "c:\\cmaps\\cxl\\data"
-python cxl_load.py -f HbA1C-Berlin-2020-01-22.cxl -c "Hemoglobin A1C to Hemoglobin Ratio Measurement (C111207)"
+python cxl_load.py -f HbA1C-Berlin-2020-01-22-ws2.cxl -c "Hemoglobin A1C to Hemoglobin Ratio Measurement (C111207)"
 python cxl_load.py -f VS-SYSBP-Metamodel3.cxl -c "Systolic Blood Pressure (C0005823)"
 """
 
